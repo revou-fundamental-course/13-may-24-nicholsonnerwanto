@@ -1,1 +1,82 @@
 /* Test Git */
+
+body {
+    font-family: Arial;
+    margin: 15px;
+    background-color: white;
+    border: 2px black;
+}
+.header-content {
+    text-align: center;
+    padding: 2px;
+}
+.section-content {
+    background-color: dodgerblue;
+    text-align: center;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+.switch-content {
+    text-align: center;
+    margin: 4px;
+}
+#switch-keliling {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 0px;
+    background-color: white;
+    color: blue;
+}
+#switch-luas {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 0px;
+    background-color: white;
+    color: blue;
+}
+.section-content>h4 {
+    margin: 0px;
+}
+.formula-text>h4 {
+    text-align: center;
+}
+.img-formula {
+    text-align: center;
+}
+img {
+    margin-top: 8px;
+    height: 250px;
+}
+input {
+    width: 100%;
+    background-color: white;
+    border: 1px solid;
+    border-radius: 4px;
+    padding: 6px;
+    margin-bottom: 14px;
+}
+.button-responsive>button {
+    padding: 12px;
+    margin: 4px;
+    border: 1px solid;
+    border-radius: 6px;
+    width: 100%;
+    background-color: green;
+    color: white;
+}
+#reset-btn {
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid;
+    color: white;
+    background-color: red;
+}
+@media only screen and (max-width: 480px) {
+    
+    .button-responsive {
+        flex-direction: column;
+    }
+}
+.footer-section{
+    text-align: center;
+}

@@ -1,1 +1,125 @@
 <!-- Test Git -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nicholson Calculator - Assignment Mini Project RevoU</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header-content">
+        <h1>Welcome to My Calculator</h1>
+        <section>
+            <p>Hai Sobat RevoU, Selamat datang di halaman saya<br>Sebuah web apps sederhana yang berfungsi untuk menghitung nilai luas dan keliling bangun datar, yaitu :</p>
+        </section>
+    </header>
+
+    <section>
+        <div class="section-content">
+            <h4>Segitiga</h4>
+        </div>
+        <!-- SWITCH HALAMAN KELILING -->
+        <div class="switch-content">
+            <button type="button" class="#section-keliling" id="switch-keliling" onclick="showHide()">Switch Keliling</button>
+        </div>
+
+        <!-- HALAMAN LUAS -->
+        <section id="section-luas" style="display: block;">
+            <section>
+                <div class="section-content">
+                    <h2>Luas Segitiga</h2>
+                </div>
+                <div class="img-formula">
+                    <img src="assets/segitiga_diagram.png" alt="">
+                </div>
+                <!-- RUMUS LUAS -->
+                <div class="formula-text">
+                    <p>Rumus Luas Segitiga, yaitu :</p>
+                    <h4><b>L = <sup>1</sup>/<sub>2</sub> x a x t</b></h4>        
+                </div>
+                <div class="information-text">
+                    <p>Dimana :<br>L = Luas<br>a = Alas<br>t = Tinggi</p>
+                </div>
+                    
+            </section>
+            <hr />
+            <section>
+                <header class="header-content">
+                    <h2>Hitung Luas Segitiga </h2>
+                </header>
+                <form>
+                    <!-- INPUT LUAS -->
+                    <div>
+                        <input placeholder="Nilai Alas" id="alas-input" type="number"/>
+                    </div>
+                    <div>  
+                        <input placeholder="Nilai Tinggi" id="tinggi-input" type="number"/>
+                    </div>
+                    <!-- HASIL LUAS -->
+                    <div>
+                        <p id="hasil-luas"></p>
+                    </div>
+                    <!-- BUTTON LUAS -->
+                    <div class="button-responsive" style="display: flex;">
+                        <button type="button" onclick="luasSegitiga()">Hitung</button>
+                        <button type="button" id="reset-btn" onclick="reset()">Reset</button>
+                    </div>
+                </form>
+            </section>
+        </section>    
+
+        <!-- HALAMAN KELILING -->
+        <section id="section-keliling" style="display: none;">
+            <section>
+                <div class="section-content">
+                    <h2>Keliling Segitiga</h2>
+                </div>
+                <div class="img-formula">
+                    <img src="assets/segitiga_diagram.png" alt="">
+                </div>
+                <!-- RUMUS KELILING -->
+                <div class="formula-text">
+                    <p>Rumus Keliling Segitiga, yaitu :</p>
+                    <h4><b>K = S1 (AB) x S2 (BC) x S3 (CA)</b></h4>
+                    
+                    </div>
+                    <div class="information-text">
+                        <p>Dimana :<br>K = Keliling<br>S1 / AB = Sisi 1<br>S2 / BD = Sisi 2<br>S3 / CA = Sisi 3</p>
+                </div>
+            </section>
+            <hr />
+            <section>
+                <header class="header-content">
+                    <h2>Hitung Keliling Segitiga </h2>
+                </header>
+                <form>
+                    <!-- INPUT KELILING -->
+                    <div>
+                        <input placeholder="Nilai Sisi 1 (AB)" id="sisi1-input" type="number"/>
+                    </div>
+                    <div>
+                        <input placeholder="Nilai Sisi 2 (BD)" id="sisi2-input" type="number"/>
+                    </div>
+                    <div>  
+                        <input placeholder="Nilai Sisi 3 (CA)" id="sisi3-input" type="number"/>
+                    </div>
+                    <!-- HASIL KELILING -->
+                    <p id="hasil-keliling"></p>
+                    <!-- BUTTON KELILING -->
+                    <div class="button-responsive" style="display: flex;">
+                        <button type="button" onclick="kelilingSegitiga()">Hitung</button>
+                        <button type="button" id="reset-btn" onclick="reset()">Reset</button>
+                    </div>
+                </form>
+            </section>
+        </section>
+    </section>
+    <footer>
+        <section class="footer-section">
+        <h5><marquee>Created By : Nicholson Nerwanto </marquee><br><a href="mailto:nicholson.nrwnto@gmail.com">nicholson.nrwnto@gmail.com</a></h5> 
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
